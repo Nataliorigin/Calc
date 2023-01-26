@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+.body {
+    font-family: "JetBrains Mono", 'Droid Sans Mono', Calibri, sans-serif;
+    width: 100%;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);;
+}
+.container {
+    width: 420px;
+    margin: 0 auto;
+    height: 626px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, .4);
+    border-radius: 20px;
+    padding: 50px 40px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .4);
+    color: #232323;
+
+}
+
+.js-output {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: right;
+    background-color: rgba(255,255,255, .4);
+    box-shadow: -3px 0 30px rgb(231, 222, 238);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.calc-numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 75px);
+    gap: 4px;
+
+}
+
+.backspace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.backspace-img {
+    width: 45%;
+    height: 45%;
+object-fit: contain;
+}
+
+.calc-button {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    font-size: 27px;
+    font-family: inherit;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 18px;
+    border: 2px solid rgba(0,0,0, .3);
+    box-shadow: 0px 7px 6px rgb(98, 97, 102);
+}
+.calc-button:hover {
+    background-color: inherit;
+}
+.calc-button:active {
+    background-color: #B49FDAFF;
+}
+.calc-button:nth-child(4n) {
+    background-color: #b49fda;
+    color: #fff;
+}
+.calc-button:nth-child(4n):hover {
+    background-color: inherit;
+}
+.calc-button:nth-child(4n):active {
+    background-color: #907fb4;
+}
